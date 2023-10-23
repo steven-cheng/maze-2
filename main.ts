@@ -14,7 +14,6 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
     game.gameOver(false)
     game.setGameOverEffect(false, effects.melt)
 })
-let mySprite = 0
 let ghost: Sprite = null
 info.startCountdown(20)
 tiles.setCurrentTilemap(tilemap`level1`)
@@ -85,6 +84,5 @@ for (let index = 0; index < 4; index++) {
         ........................
         ........................
         `, SpriteKind.Enemy)
-    mySprite = 0
     tiles.placeOnRandomTile(ghost, sprites.castle.tilePath5)
 }
