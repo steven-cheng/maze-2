@@ -8,7 +8,7 @@ info.onCountdownEnd(function () {
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     info.changeScoreBy(1)
     tiles.placeOnRandomTile(otherSprite, sprites.castle.tilePath5)
-    music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.UntilDone)
+    music.play(music.melodyPlayable(music.baDing), music.PlaybackMode.InBackground)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
     game.gameOver(false)
