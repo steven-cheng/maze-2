@@ -85,4 +85,6 @@ for (let index = 0; index < 4; index++) {
         ........................
         `, SpriteKind.Enemy)
     tiles.placeOnRandomTile(ghost, sprites.castle.tilePath5)
+    ghost.setVelocity((randint(0, 1) - 0.5) * 50, 0)
+    ghost.setBounceOnWall(true)
 }
